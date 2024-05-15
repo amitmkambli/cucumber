@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-05-06T13:12:32.691Z",
+        "line": 4,
+        "name": "User registration with different data",
+        "description": "",
+        "id": "user-registration;user-registration-with-different-data",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4002200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on registration page",
+            "match": {
+              "location": "stepdefinations.UserRegistrationSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3964800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User enters following details",
+            "match": {
+              "location": "stepdefinations.UserRegistrationSteps.user_enters_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "naveen",
+                  "automation",
+                  "nav@gmail.com",
+                  "99999",
+                  "Banglore"
+                ]
+              },
+              {
+                "cells": [
+                  "tom",
+                  "peter",
+                  "tom@gmail.com",
+                  "66666",
+                  "London"
+                ]
+              },
+              {
+                "cells": [
+                  "lisa",
+                  "dsouza",
+                  "lisa@gmail.com",
+                  "22222",
+                  "SFO"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user registration should be sucessfull",
+            "match": {
+              "location": "stepdefinations.UserRegistrationSteps.user_registration_should_be_sucessfull()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "User Registration",
+    "description": "",
+    "id": "user-registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/Registration.feature",
+    "tags": []
+  }
+]
